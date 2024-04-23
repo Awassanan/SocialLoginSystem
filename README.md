@@ -45,16 +45,14 @@ In addition to the core username and password login functionality, this project 
 * **Error Handling:** Clear error messages are displayed when an invalid username or password is provided, ensuring users receive prompt feedback and guidance during the login process.
 
 ### Example Accounts provided
-1.  username: alice
-    password letmein
+| Username | Password    |
+|----------|-------------|
+| alice    | letmein     |
+| Yuyu     | 1234        |
+| Miab     | 1234        |
 
-2.  username: Yuyu
-    password: 1234
 
-3.  username: Miab
-    password: 1234
-
-### Modified by
+### Modified by:
 Awassanan Phanosak
 
 ---

@@ -63,11 +63,11 @@ passport.use(new GoogleStrategy({
     });
 }));
 
-passport.serializeUser(function (user, cb) {
-    process.nextTick(function () {
-        cb(null, { id: user.id, username: user.username });
-    });
-});
+// passport.serializeUser(function (user, cb) {
+//     process.nextTick(function () {
+//         cb(null, { id: user.id, username: user.username });
+//     });
+// });
 
 passport.serializeUser(function (user, cb) {
     process.nextTick(function () {

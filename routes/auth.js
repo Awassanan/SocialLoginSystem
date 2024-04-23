@@ -123,14 +123,33 @@ passport.deserializeUser(function (user, cb) {
     });
 });
 
-router.get('/login', function (req, res, next) {
-    res.render('login');
+// router.get('/login', function (req, res, next) {
+//     res.render('login');
+// });
+
+// router.post('/login/password', passport.authenticate('local', {
+//     successRedirect: '/',
+//     failureRedirect: '/login'
+// }));
+
+router.get('/login', (req, res, next) => {
+    const errorMessage = req.query.error;
+    res.render('login', { errorMessage });
 });
 
-router.post('/login/password', passport.authenticate('local', {
-    successRedirect: '/',
-    failureRedirect: '/login'
-}));
+router.post('/login/password', (req, res, next) => {
+    passport.authenticate('local', (err, user, info) => {
+        if (err) { return next(err); }
+        if (!user) {
+            return res.redirect('/login?error=' + encodeURIComponent(info.message));
+        }
+        
+        req.logIn(user, (err) => {
+            if (err) { return next(err); }
+            return res.redirect('/');
+        });
+    })(req, res, next);
+});
 
 router.get('/login/federated/google', passport.authenticate('google'));
 
@@ -144,7 +163,7 @@ router.get('/login/federated/facebook', passport.authenticate('facebook'));
 router.get('/oauth2/redirect/facebook', passport.authenticate('facebook', {
     successRedirect: '/',
     failureRedirect: '/login'
-  }));
+}));
 
 router.post('/logout', function (req, res, next) {
     req.logout(function (err) {

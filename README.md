@@ -1,5 +1,5 @@
 # social-login-system
-This authentication system is developed as part of the Dev Init #2 course offered by borntoDev. It provides secure user authentication using username and password login based on Jared Hanson's tutorial from passport.org documentation.
+This authentication system is developed as part of the Dev Init #2 course offered by borntoDev. It provides secure user authentication using username and password login based on Jared Hanson's tutorial from passport.org documentation. [https://www.passportjs.org/tutorials/password/](https://www.passportjs.org/tutorials/password/)
 
 ## Prerequisites
 Before running this project locally, ensure you have the following prerequisites installed on your machine:

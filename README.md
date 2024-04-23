@@ -1,6 +1,11 @@
 # social-login-system
 This system is part of Dev Init #2 by borntoDev. I developed it using Jared Hanson's tutorial from the passport.org documentation for username and password login. Additionally, I've extended this project by integrating Google and Facebook login features, following Jared's separate repository tutorials for each type of login, all within a single application.
 
+## Modified by
+Awassanan Phanosak
+
+---
+
 # todos-express-starter
 
 This is a starter kit for building a todo app with sign in functionality using

@@ -4,6 +4,16 @@ This system is part of Dev Init #2 by borntoDev. I developed it using Jared Hans
 ## Modified by
 Awassanan Phanosak
 
+### Example Accounts provided
+1.  username: alice
+    password letmein
+
+2.  username: Yuyu
+    password: 1234
+
+3.  username: Miab
+    password: 1234
+
 ---
 
 # todos-express-starter

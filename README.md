@@ -1,5 +1,9 @@
 # social-login-system
-This system is part of Dev Init #2 by borntoDev. I developed it using Jared Hanson's tutorial from the passport.org documentation for username and password login. Additionally, I've extended this project by integrating Google and Facebook login features, following Jared's separate repository tutorials for each type of login, all within a single application.
+This authentication system is developed as part of the Dev Init #2 course offered by borntoDev. It incorporates username and password login functionality based on Jared Hanson's tutorial from passport.org documentation, providing secure authentication for users.
+
+In addition to the foundational username and password login, I have expanded this project to include advanced features such as Google and Facebook login integration. Each integration was implemented using Jared's separate repository tutorials, resulting in a comprehensive authentication solution within a single application.
+
+To enhance user experience, the system displays clear error messages when an invalid username or password is provided, ensuring users receive prompt feedback and guidance during the login process.
 
 ## Modified by
 Awassanan Phanosak
